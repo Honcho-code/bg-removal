@@ -25,7 +25,7 @@ const clerkWebhooks = async (req,res)=>{
                     lastName: data.last_name,
                     photo: data.image_url
                 }
-                await userData.create(userData)
+                await userModel.create(userData)
                 res.json({})
                 break;
             }
